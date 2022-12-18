@@ -12,4 +12,6 @@ https://www.ibm.com/cloud/learn/overfitting
 特征vs属性  
 对targetvalue有影响的属性称为特征  
 
+机器学习 vs 深度学习
+深度学习是机器学习的一部分，但是深度学习用神经网络，可以将非结构化的数据，如文本，图片，声音，视频转变为数学值，从而作为特征进行学习。
 
