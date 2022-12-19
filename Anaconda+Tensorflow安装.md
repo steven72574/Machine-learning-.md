@@ -7,9 +7,11 @@
 管理员身份运行Anacond Prompt  
 conda create -n tensorflow python=3.6  
 进入tensorflow环境：conda activate tensorflow  
-下载tensorflow pip install tensorflow (tensorflow 已经可以支持python3.7）  
+下载tensorflow pip install tensorflow (tensorflow 已经可以支持python3.7）  或(conda install tensorflow )是给anaconda装的
 测试tensorflow安装是否成功：   
 输入python进入python命令行   
 输入import tensorflow as tf 结果不报错，说明安装成功   
 
-activate tensorflow 激活tensorflow环境  
+activate tensorflow 激活tensorflow环境
+安装keras
+https://blog.csdn.net/weixin_42886817/article/details/99450965
