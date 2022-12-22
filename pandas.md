@@ -29,3 +29,12 @@ data[ data.ICU > 2]
 data[(data.AGE<30) & (data.AGE >20)]
 data[ data.MEDICAL_UNIT.isin( [1,2,3] )]
 ```
+
+### 画图
+
+```python
+import matplotlib.pyplot as plt
+plt.figure()
+data.plot().bar()//柱状图
+data.plot().bar(stacked = True)//柱状图叠加
+data.plot().barh()//水平柱状图
