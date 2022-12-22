@@ -12,6 +12,8 @@ data.AGE.value_counts()
 #对所有值修改
 review_points_mean = reviews.points.mean()
 reviews.points.map(lambda p: p - review_points_mean)#集体减去平均数
+#更简洁的方法
+reviews.points - reviews_points_mean
 #apply()可以执行一个函数
 def remean_points(row):
     row.points = row.points - review_points_mean
