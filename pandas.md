@@ -7,6 +7,17 @@ data.columns
 data.describe()
 data.head()
 data.tail()
+data.AGE.unique()#查看有哪些值，不重复
+data.AGE.value_counts()
+#对所有值修改
+review_points_mean = reviews.points.mean()
+reviews.points.map(lambda p: p - review_points_mean)#集体减去平均数
+#apply()可以执行一个函数
+def remean_points(row):
+    row.points = row.points - review_points_mean
+    return row
+
+reviews.apply(remean_points, axis='columns')
 ```
 ### 选择特定行和列
 ```python
