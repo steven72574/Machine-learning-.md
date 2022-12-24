@@ -1,3 +1,19 @@
+# Series
+Series是一个一维带标签的数组
+
+```python
+#从列表创建Series
+data = pandas.Series(data = data , index = index)
+#data 和 index都是列表
+#从字典创建Series
+dict = {'a':1,'b':2}
+data1 = pandas.Series(dict)
+
+#NaN是缺失数据的标识
+```
+索引
+![image](https://user-images.githubusercontent.com/83968454/209437019-874ea96b-641d-4c6a-b24d-e33d58e82b80.png)  
+
 https://pandas.pydata.org/docs/user_guide/missing_data.html
 ### 查看数据
 
@@ -20,6 +36,10 @@ def remean_points(row):
     return row
 
 reviews.apply(remean_points, axis='columns')
+```
+__groupby__
+```python 
+data.groupby("PREGNANT").AGE.mean()
 ```
 ### 选择特定行和列
 ```python
